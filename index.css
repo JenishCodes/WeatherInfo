@@ -10,11 +10,15 @@ body {
 #root {
   padding: 0% 5%;
 }
-.form {
+.form{
   display: flex;
+  width: max-content;
+  margin: auto;
 }
 .navbar {
   background-color: #254254;
+  display: flex;
+  justify-content: space-between;
 }
 .card-info {
   display: flex;
@@ -108,16 +112,9 @@ header {
   padding: 1% 2%;
   background-color: #254254;
   text-align: right;
-  font-size: 18px;
+  font-size: 2vw;
 }
-@media only screen and (min-width: 700px) {
-  .navbar-toggler {
-    display: none;
-  }
-  #navbarSupportedContent {
-    display: flex;
-  }
-}
+
 @media only screen and (max-width: 700px) {
   .card-weather {
     flex-direction: column;
@@ -130,11 +127,5 @@ header {
   }
   hr {
     margin: 3% 0%;
-  }
-  .navbar-toggler {
-    display: block;
-  }
-  #navbarSupportedContent {
-    display: none;
   }
 }
